@@ -4,7 +4,7 @@ import axios from "axios";
 import qs from "qs";
 
 let imageUrl = ref("")
-let prompt = ref("")
+let prompt = ref("Best quality, masterpiece, ultra high res, (photorealistic:1.4), 1girl")
 
 function paint() {
   console.log("prompt=" + prompt.value)
