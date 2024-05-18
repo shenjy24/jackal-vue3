@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import PaintView from "@/views/PaintView.vue";
 import SseClientView from "@/views/SseClientView.vue";
 import AudioView from "@/views/AudioView.vue";
+import AudioSseClient from "@/components/AudioSseClient.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +35,11 @@ const router = createRouter({
             path: "/audio",
             name: "AudioView",
             component: AudioView
+        },
+        {
+            path: "/sse/audio",
+            name: "AudioSseView",
+            component: AudioSseClient
         }
     ]
 })
